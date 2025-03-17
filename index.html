@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&family=Delicious+Handrawn&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <canvas id="patternCanvas"></canvas>
+    <div class="floating-disclaimer">
+        <p>⚠️ THIS IS A DEVELOPMENT WEBSITE. DEMO DATA FOR ORDER IDs ORD01 TO ORD100 ONLY.</p>
+    </div>
+    <div class="dark-mode-toggle">
+        <button id="darkModeButton" aria-label="Toggle Dark Mode">
+            <span class="bulb-icon"></span>
+        </button>
+    </div>
+    <div class="container">
+        <div class="tracking-card">
+            <h1>Track Your Order</h1>
+            <div class="input-group">
+                <label for="orderId">Order ID:</label>
+                <input type="text" id="orderId" placeholder="Enter your Order ID (e.g., ORD01)" title="Please enter Order ID in the format ORDXX (e.g., ORD01, ORD50, ORD99)">
+                <button id="trackButton">Track Order</button>
+            </div>
+            <div id="orderStatus" class="status-box">
+            </div>
+        </div>
+    </div>
+    <div class="footer-credit">
+        <p>Designed by Atharva Zope</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
